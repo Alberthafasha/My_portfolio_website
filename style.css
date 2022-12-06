@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(177, 178, 179);
+    width: 450px;
+    align-items: center;
+
+}
+        h1   {color: black;}
+        h2 {
+            color: lightyellow;
+        }
+        p    {
+            color: rgb(26, 25, 25);
+            background-color: white;
+            /* border-color: white; */
+            border: 2px solid powderblue;
+            border-width: 10px;
+            /* border: 2px solid powderblue; */
+        }
