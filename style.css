@@ -1,18 +1,93 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    background-color: rgb(177, 178, 179);
-    width: 450px;
-    align-items: center;
+    background: radial-gradient(closest-side at 50% 40%, rgb(150, 146, 146) 2%, black);
+    height: screen;
+    font-family:sans-serif;
+}
+
+.personal-image {
+    /* background-image: url(./Pictures/HAFASHIMANA\ Albert\ 217176321.png); */
+    
+    filter: grayscale(80%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+    .personal-image {
+        max-width: 80%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .personal-image {
+        max-width: 70%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .personal-image {
+        max-width: 60%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .personal-image {
+        max-width: 55%;
+        max-height: 100%;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
 
 }
-        h1   {color: black;}
-        h2 {
-            color: lightyellow;
-        }
-        p    {
-            color: rgb(26, 25, 25);
-            background-color: white;
-            /* border-color: white; */
-            border: 2px solid powderblue;
-            border-width: 10px;
-            /* border: 2px solid powderblue; */
-        }
+
+.page-content{
+    padding-top: 150px;
+}
+
+h1{
+    color: white;
+    font-size: 120px;
+}
+h2{
+    color: white;
+    font-size: 45px;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+}
+  
