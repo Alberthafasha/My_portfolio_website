@@ -5,15 +5,17 @@ html {
 }
 
 body {
-    background: radial-gradient(closest-side at 50% 40%, rgb(150, 146, 146) 2%, black);
+    background: radial-gradient(closest-side at 50% 40%, rgb(65, 63, 63) 2%, black);
     height: screen;
     font-family:sans-serif;
+    align-items: center;
+    overflow-x: hidden
 }
 
 .personal-image {
     /* background-image: url(./Pictures/HAFASHIMANA\ Albert\ 217176321.png); */
     
-    filter: grayscale(80%);
+    /* filter: grayscale(80%); */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +50,7 @@ body {
 
 @media screen and (min-width: 1600px) {
     .personal-image {
-        max-width: 55%;
+        max-width: 60%;
         max-height: 100%;
     }
 }
@@ -72,22 +74,69 @@ li a {
     font-size: 30px;
 
 }
+.navbar{
+    position: fixed;
+    background-color: black;
+    top: 0;
+}
 
 .page-content{
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 h1{
     color: white;
-    font-size: 120px;
+    font-size: 80px;
+    margin-left: 50px;
+    /* padding-bottom: 5px; */
+    /* text-decoration: underline 2px solid rgb(112, 231, 252); */
 }
 h2{
     color: white;
-    font-size: 45px;
+    font-size: 35px;
+    margin-left: 50px;
 }
 
 p{
     color: white;
     font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
 }
-  
+
+
+.page-description{
+    background-color: rgb(29, 29, 29); 
+    opacity: 75%;
+    border: 2px solid rgb(112, 231, 252); 
+    margin: 50px 50px;
+}
+
+.blog-cards{
+  box-shadow: 0 2px 4px 0 rgb(112, 231, 252);
+  transition: 0.3s;
+  width: 45%;
+  float: left;
+  margin: 20px;
+  background-color: rgb(65, 63, 63);
+}
+p.blog-cards{
+    font-size: 14px;
+    /* background-color: brown; */
+    box-shadow: none;
+    width: 90%;
+}
+
+img{
+    width: 100%;
+    height: 280px;
+}
+.footer {
+    position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 8px;
+  background-color:rgb(77, 75, 75);
+ }
