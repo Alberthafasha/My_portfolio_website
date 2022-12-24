@@ -7,44 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert_Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
 
+    
 </head>
 
 <body>
-
-    <!-- <div class="personal-image" style="background-image: url(./Pictures/HAFASHIMANA\ Albert\ 217176321.png)"> -->
-    <div class="personal-image" style="background-image: url(./Pictures/home\ bg\ pic.png)">
-        <ul class="navbar">
-            <li><a href="./pages/more.html">More</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/portfolio.html">Portfolio</a></li>
-            <li><a href="./pages/about.html">About</a></li>
-            <li><a href="#home">Home</a></li>
-
-        </ul>
-        <div class="page-content">
-            <h1>Albert</h1>
-            
-            <div class="page-description">
-                <h2>Software developer</h2>
-                <p>I am a designer and full-stuck developer.</p>
-            <p>I also do IoT development applications</p>
+    <section class="header" style="background-image: url(./Pictures/Home_pc.png);">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/blog.html">Blog</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
             </div>
-            
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
 
-        </div>
-        <div style="margin-left: 50px; margin-top: 100px;">
-            <button style="float: left; background-color: rgb(112, 231, 252); padding: 7px; color: rgb(207, 207, 207); font-size: 20px;">
-                Choose Carrier
-            </button>
-            <button style="float: left; background-color:rgb(29, 29, 29); color: white; margin-left: 50px; border: 3px solid rgb(112, 231, 252); padding: 5px; font-size: 20px;">
-                View More Carriers
-            </button>
-        </div>
-        <div class="footer">
+        <div class="text-box">
+            <h1>Albert</h1>
+            <p>I am an Electrical Engineer. </br> I am also a full-stuck and IoT developer</p>
             <p></p>
+            <a href="" class="hero-btn">Visit Us To know More</a>
         </div>
-    </div>
+
+    </section>
+    <section class="footer">
+        <h4>More info</h4>
+        <p>Reach me through</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Happy Codding With Me <i class="fa fa-heart-o"></i></p>
+    </section>
+    <script src="/Control/Control.js"></script>
+
 </body>
 </html>

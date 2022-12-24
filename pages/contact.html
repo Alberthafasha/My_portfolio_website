@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert_Portfolio</title>
-    <link rel="stylesheet" href="../style.css" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-<body>
-    <div class="personal-image">
-        <ul class="navbar">
-            <li><a href="./more.html">More</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="../index.html">Home</a></li>
-            
-          </ul>
-        <div class="page-content">
-            <h1>Get In Touch</h1>
-            <div>
-                <div>
-                    <i class="fa fa-fw fa-home" style="width:100%; font-size:40px;color:rgb(255, 255, 255); float: left;"><p style="border-bottom: 2px solid rgb(112, 231, 252)">+6H9, KK 232 St, Kigali</p></i>
-                </div>
-                <div>
-                    <i class="fa fa-fw fa-phone" style="width:100%; font-size:40px;color:rgb(255, 255, 255); float: left;"><p style="border-bottom: 2px solid rgb(112, 231, 252)">+250 783 589 562</p></i>
-                </div>
-                <div>
-                    <i class="fa fa-fw fa-envelope" style="width:100%; font-size:40px;color:rgb(255, 255, 255); float: left;"><p style="border-bottom: 2px solid rgb(112, 231, 252)">hafashalbert@gmail.com</p></i>
-                </div>
-                
-            </div>
-            <div class="footer">
-                <p></p>
-            </div>
-            
-        </div>
-    </div>
+    <link rel="stylesheet" href="../style.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
    
+</head>
+
+<body>
+    <section class="header" style="background-image: url(./Pictures/HAFASHIMANA\ Albert\ 217176321.png);">
+        <nav>            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <section class="contact" style="background-image: url(../Pictures/portfolio\ pic1.png);">
+            <h1>Contact Me From Anywhere In The World</h1>
+            <!-- <a href="" class="hero-btn">Get in touch </a> -->
+            
+                <div class="contats">
+                    <i class="fa fa-home"></i><p>24HG+V82, Kigali</p></br>
+                    <i class="fa fa-phone-square"></i><p>+250783589562</p></br>
+                    <i class="fa fa-envelope-o" href="mailto:hafashalbert2gmail.com"></i><p>hafashalbert@gmail.com</p></br>
+                </div>
+            
+            
+            <div class="container">
+                <form>
+                    <i class="fa fa-envelope-o"></i>
+
+                    <div class="input-group">
+                        <label>Full Name</label></br>
+                        <input type="text" placeholder="ATETE Agnes" id="contact-name" onkeyup="validateName()" >
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input-group"></br>
+                        <label>Phone No</label>
+                        <input type="tel" placeholder="0783 589 563" id="contact-phone" onkeyup="validatePhone()" >
+                        <span id="phone-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label></br>
+                        <input type="email" placeholder="example@gmail.com" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Message</label></br>
+                        <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+
+                    <button onclick="return validateForm()">Submit</button>
+                    <span id="submit-error"></span>
+                </form>
+            </div>
+        </section>
+    </section>
+    <section class="footer">
+        <h4>More info</h4>
+        <p>Reach me through</p>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Happy Codding With Me <i class="fa fa-heart-o"></i></p>
+    </section>
     
+    <script src="../Control/Control.js"></script>
 </body>
 </html>
