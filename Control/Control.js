@@ -101,6 +101,13 @@ function validateForm(){
 
 
 
+const section = document.querySelectorAll('section.header');
+section.style.color = 'red';
+console.log(section)
+
+// const header = document.getElementsByClassName('header');
+// header.style.color = 'red'
+// console.log(header)
 
 
 
@@ -120,47 +127,3 @@ function validateForm(){
 
 
 
-
-
-
-
-// const name = decument.getElementById("name");
-// const password = decument.getElementById("password");
-// const form = document.getElementById("form")
-// const errorElement = document.getElementById("Error")
-
-// form.addEventListener('submit', (e)=>{
-//     let messages = [];
-//     if(name.value === '' || name.value == null){
-//         messages.push("Name is required")
-//     }
-
-//     if(messages.length > 0){
-//         e.preventDefault()
-//         errorElement.innerText = messages.join(', ')
-//     }
-    
-// })
-
-
-
-// function validForm(){
-//     // alert("No")
-
-//     var name = document.custom-form.name;
-//     var email = document.custom-form.email;
-//     var phone = document.custom-form.phone;
-//     var subject = document.custom-form.subject;
-//     var message = document.custom-form.message;
-
-
-//     if(valueof(name) == ""){
-//         name.nextElementSibling.style.display = "block";
-//         name.style.border = "1px solid #f00"
-//         return false
-//     }else{
-//         name.nextElementSibling.style.display = "none";
-//         name.style.border = "1px solid transparent"
-//     }
-
-// }

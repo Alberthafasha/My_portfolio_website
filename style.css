@@ -16,6 +16,11 @@ body{
   background: radial-gradient(closest-side at 50% 40%, rgb(65, 63, 63) 2%, black);
  
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 p{
   font-size: 17px;
 }
